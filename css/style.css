@@ -24,6 +24,10 @@ body {
   color: white;
 }
 
+input{
+  color: black;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
