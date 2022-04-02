@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Exercices JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Exercices JavaScript" />
+	<link rel="icon" type="image/png" href=" "/>
+	<script src="https://use.fontawesome.com/829ef27f92.js"></script>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+
+
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+		<div id="fh5co-aside" style="background-image: url(images/image_1.gif)">
+			<div class="overlay"></div>
+			<nav role="navigation">
+				<ul>
+					<li><a href="index.html"><i class="icon-home"></i></a></li>
+					<input type="checkbox" class="checkbox" id="checkbox">
+					<label onclick="myFunction()" for="checkbox" class="label">
+						<i></i>
+						<i class="iconify" data-icon="icomoon-free:contrast"></i>
+						<div class='ball'>
+					  </label>
+
+				</ul>
+			</nav>
+			<div class="featured" style="background: rgba(0, 0, 0, 0.5);">
+				<span style="color: white;">Compétences numériques</span>
+				<h2>Corrigés des exercices JavaScript</h2>
+				<span style="color: white;">2021 - 2022</span>
+			</div>
+		</div>
+		<div id="fh5co-main-content">
+			<div class="fh5co-post"> <div class="fh5co-entry padding">
+			<h1>A propos de cette page...</h1>
+
+			<p>Vous trouverez ci-dessous les corrigés des exercices vus pendant l'année en : <b>JavaScript</b>.
+			<br>Cliquez sur les icônes <img src="images/icon.png" width = 25> pour voir ou masquer les solutions.</p> 
+
+
+			</div></div>
+				<div class="fh5co-post"> 
+						
+	<div class="fh5co-entry padding">
+		<div>
+			<span class="fh5co-post-date">Séance 1</span>
+			<h2>Conversion des euros en francs <img src="images/icon.png" alt="Version JavaScript" title="Version JavaScript" onclick="affSol(101);" width = 25></h2>
+			<p>Créez une fonction <code>prix_en_francs</code> qui admet en paramètre un montant en <b>euros</b> et renvoie ce même montant en <b>francs</b>.</p>
+			<pre>>> prix_en_francs(10)65.5957 // C’est le montant en euros * 6.55957</pre>
+			<input value="Montant en euros" onclick='effacer(this);' onkeyup='enFrancs(this);'>
+			<p id="r101"></p>
+			<pre id= "s101" class="alert alert-success" style="display: none;">>> var prix_en_francs = e => (e * 6.56).toFixed(2) + ' Francs'
+			// .toFixed pour définir le nombre de décimales</pre>
+			<pre class="alert alert-warning" id= "s101p" style="display: none;">def prix_en_francs(e): return  str(round(e * 6.56, 2)) + ' Francs'</pre>
+	 
+
+
+			<pre id= "s101" class="alert alert-success" style="display: none;">>> var prix_en_francs = e => (e * 6.56).toFixed(2) + ' Francs'
+			
+		// .toFixed pour définir le nombre de décimales</pre>
+			<pre class="alert alert-warning" id= "s101p" style="display: none;">def prix_en_francs(e):
+		return  str(round(e * 6.56, 2)) + ' Francs'</pre>
+
+
+			<h2>Aire d'un disque <img src="images/icon.png" alt="Version JavaScript" title="Version JavaScript" onclick="affSol(102);" width = 25> </h2>
+			<p>Écrire une fonction <code>aire</code> qui calcule l’aire d’un disque en fonction du rayon.<br>
+	<u>Formule</u> : Aire = π * r * r  . On pourra utiliser 3.14 (avec un point) pour π ou Math.PI</p>
+			<pre>>> aire(10)
+	314.16</pre>
+			<input value="Rayon" onclick='effacer(this);' onkeyup='aire(this);'>
+			<p id="r102"></p>
+			<pre id= "s102" class="alert alert-success" style="display: none;">>> var aire = r => Math.PI * r * r</pre>
+			<pre class="alert alert-warning" id= "s102p" style="display: none;">from math import *
+	
+	def aire(r):
+	 return  pi * r * r</pre>
+			<pre class="alert alert-danger" id= "s102a" style="display: none;">      aire ← {⍵ × ⍵ × ○1}  		⍝ Pi s'écrit ○1 en APL
+		  aire 10
+	314.1592654</pre> 
+		</div>
+	</div>
+
+	
+	
+	</head><body><div class="fh5co-entry padding">
+		<div>
+			<span class="fh5co-post-date">Séance 2</span>
+			<h2>Contamination <img src="images/icon.png" alt="Version JavaScript" title="Version JavaScript" onclick="affSol(201);" width = 25></h2>
+			<p>Créez une fonction <code>contamination</code> qui admet en paramètres un <b>texte</b> et le <b>contaminant</b> qui remplacera le texte d'origine.</p>
+			<pre>&gt;&gt; contamination("abcde","#")
+	"#####" // On retrouve le texte contaminé</pre>
+			<label>Texte</label> <input id= "t201" value="Texte" onclick="effacer(this);" onkeyup="contamination();"> <label>Contaminant</label> <input id = "v201" value="#" onkeyup="contamination();" size="3">
+			<p id="r201"></p>
+			<pre id="s201" class="alert alert-success" style="display: none;">&gt;&gt; var contamination = (texte,z) =&gt; z.repeat(texte.length)</pre>
+			<pre id="s201p" class="alert alert-warning" style="display: none;">def contamination(texte, z):
+		return len(texte) * z
+	 
+	contamination("abcde","#")
+	'#####'</pre>		
+			<pre id="s201a" class="alert alert-danger" style="display: none;">      contamination ← {(⍴⍺) ⍴ ⍵}
+	
+		  'abcde' contamination '#'
+	#####</pre>	
+			
+			<h2>Carte de crédit <img src="images/icon.png" alt="Version JavaScript" title="Version JavaScript" onclick="affSol(202);" width = 25> </h2>
+			<p>Écrire une fonction <code>masquer</code> qui masque les chiffres du numéro de carte, sauf les 4 derniers.</p>
+			<pre>&gt;&gt; masquer("123456789")
+	"#####6789"</pre>
+			<input value="Numéro carte" onclick="effacer(this);" onkeyup="masquer(this);">
+			<p id="r202"></p>
+			<pre id="s202" class="alert alert-success" style="display: none;">&gt;&gt; var masquer = code =&gt; = code.length < 4 ? code : "#".repeat(code.length - 4) + code.slice(-4)</pre>
+			<pre id="s202p" class="alert alert-warning" style="display: none;">def masquer(code):
+		if len(code) < 4: return code 
+		return (len(code) - 4) * "#" + code[-4:]</pre>	
+			<pre id="s202a" class="alert alert-danger" style="display: none;">      masquer ← {(4 ↓ (⍴⍵) ⍴ '#'),¯4 ↑ ⍵}
+	
+		  masquer '123'
+	 123
+		  masquer '123456789'
+	#####6789</pre>	    
+		
+		
+		</div>
+	</div>
+
+	
+	
+	
+	<div class="fh5co-entry padding">
+		<div>
+			<span class="fh5co-post-date">Séance 4</span>
+			<h2>Parc d'attraction <img src="images/icon.png" alt="Version JavaScript" title="Version JavaScript" onclick="affSol(401);" width = 25> </h2>
+			<p>Un parc d’attraction est accessible aux enfants de 13 ans et plus. Il est également accessible aux enfants
+	de moins de 13 ans s’ils sont accompagnés par un adulte. Écrire une fonction <code>parc</code> qui admet 2 paramètres,
+	l’âge du visiteur et s’il est accompagné ou non d’un adulte (false ou true). En sortie on obtient :</p>
+	<pre>>> parc(15,false)
+	"Bonne journée !"
+	>> parc(17,true)
+	"Bonne journée !"
+	>> parc(7,true)
+	"Bonne journée !"
+	>> parc(9,false)
+	"Entrée interdite !"</pre>
+	
+			<input id="age401" value='Age ?' size="4" onkeyup="parc()" onclick="effacer(this)" type="text"> 
+			<label>Accompagné ?</label> oui <input id="adulte401"  type="radio" name='adulte' onclick="parc()"> 
+			non <input type="radio" name='adulte' onclick="parc()" checked>
+			<p id="r401"></p>
+			<pre id= "s401" class="alert alert-success" style="display: none;">var parc_version1 = (age, adulte) => {
+	  if (age < 13 && !adulte) return "Entrée interdite !"
+	  return "Bonne journée !"
+	}
+			
+	>> var parc_version2 = (age, adulte) => age >= 13 || adulte ?  "Bonne journée !" : "Entrée interdite !"
+	
+	// age < 13 && !adulte signifie avoir moins de 13 ans ET qu'il n'y a pas d'adulte
+	// age >= 13 or adulte signifie avec au moins 13 ans OU qu'il y a un adulte</pre>
+	
+			<pre class="alert alert-warning" id= "s401p" style="display: none;">def parc(age,adulte):
+		if age >= 13 or adulte:
+			return "Bonne journée !"
+		return "Entrée interdite !"
+	
+	parc(15,True)
+	"Bonne journée !"
+	parc(9,False)
+	"Entrée interdite !"</pre>
+	
+			<pre class="alert alert-danger" id= "s401a" style="display: none;">⍝ ∨ signifie "ou", ⍵ le paramètre de droite et ⍺ celui de gauche
+			
+		  parc ← {⍺ ≥ 13 ∨ ⍵ : 'Bonne journée' ⋄ 'Entrée interdite'}
+	
+		  15 parc 0		⍝ Ici ⍺ = 15 et ⍵ = 0
+	Bonne journée
+		  7 parc 1
+	Bonne journée
+		  9 parc 0
+	Entrée interdite</pre>
+
+		</div>
+	</div>
+
+	<div class="fh5co-entry padding">
+		<div>
+			<span class="fh5co-post-date">Séance 6</span>
+		<h2>Pourboire avec multiplicateur </h2>
+		<p>Créez une fonction <code>pourboire</code> qui admet en paramètre un montant en <b>euros</b> et renvoie ce même montant multiplié selon la <b>note</b> donnée.</p>
+		<input id="t099" value="Montant en euros" onclick='effacer(this);' onkeyup='pourboire();'>
+		<select id="v099" onchange="pourboire()">
+			<option value="vide">-- Service --</option>
+			<option value="TB">Très Bien</option>
+			<option value="B">Bien</option>
+			<option value="nul">Nul !</option>
+		</select> 
+		
+		<p id="r099"></p>
+		</div>
+	</div>
+	
+	<div class="fh5co-entry padding">
+		<div>
+			<span class="fh5co-post-date">Séance 12</span>
+			<h2>Vieux listing <img src="images/icon.png" alt="Réponse" onclick="affSol(1201);" width="25"> </h2>
+			<p>Créez une fonction <code>acronyme</code> qui admet en paramètre une <b>phrase</b> et renvoie les <b>initiales</b> en <b>majuscules</b> de chaque mots présents dans la phrase.</p>
+			<pre>&gt;&gt; acronyme("rentre avec tes pieds")
+	"R.A.T.P" // C’est l'acronyme de "rentre avec tes pieds"</pre>
+			<input value="Tapez une phrase" onclick="effacer(this);" onkeyup="acronyme(this);">
+			<p id="r1201"></p>
+			<pre id="s1201" class="alert alert-success" style="display: none;">&gt;&gt; var acronyme = (phrase) =&gt; phrase.toUpperCase().split(" ").map(mot =&gt; mot[0]).join(".")
+	
+	// Version 2 hors programme
+	
+	&gt;&gt; var acronyme = phrase => phrase.match(/\b(\w)/g,'$1').join('.').toUpperCase()</pre>
+			<pre id="s1201p" class="alert alert-warning" style="display: none;">def acronyme(phrase):
+		return ".".join([mot[0] for mot in phrase.upper().split(" ")])
+		
+	acronyme('Rentre avec tes pieds')
+	'R.A.T.P'</pre>
+			<pre id="s1201a" class="alert alert-danger" style="display: none;">      acronyme ← {(¯1⌽ ' ' = a) / a ← ' ', ⍵}
+	
+		  acronyme 'rentre avec tes pieds'
+	ratp
+	
+	⍝ Version 2
+	
+		  acronyme ← 1 ⎕C '\w+' ⎕S {⊃ ⍵.Match}
+		  acronyme 'rentre avec tes pieds'
+	RATP
+	</pre>
+	
+	</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="gototop js-top">
+			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+		</div>
+		
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Stellar Parallax -->
+		<script src="js/jquery.stellar.min.js"></script>
+		<!-- Main -->
+		<script src="js/main.js"></script>
+	
+		</body>
+	</html>
+	
